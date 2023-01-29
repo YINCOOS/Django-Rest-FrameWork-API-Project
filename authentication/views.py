@@ -23,7 +23,7 @@ class RegisterView(GenericAPIView):
 class LoginView(GenericAPIView):
     def post(self, request):
         data = request.data
-        username = data.get('username', '')
+        username = data.get('username',)
         password = data.get('password', '')
         user=auth.authenticate(username=username, password=password)
 
